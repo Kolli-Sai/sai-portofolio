@@ -42,6 +42,7 @@ const ContactPage = () => {
     formState;
   const [isLoading, setIsLoading] = React.useState(false);
   const onSubmit = (data) => {
+    console.log("sending email", data);
     setIsLoading(true);
     Api.post("/send-email", data)
       .then((res) => {
@@ -53,6 +54,7 @@ const ContactPage = () => {
       })
 
       .catch((err) => {
+        console.log(err);
         setIsLoading(false);
         toast({
           title: "Message not sent",
@@ -71,7 +73,7 @@ const ContactPage = () => {
 
   useEffect(() => {
     if (isSubmitSuccessful) {
-      console.log("success");
+      // console.log("success");
       reset();
     }
   }, [isSubmitSuccessful, reset]);
@@ -90,7 +92,7 @@ const ContactPage = () => {
           animate={{ opacity: 1 }} // Set animate opacity to 1 for the staggered animation
           transition={{ duration: 0.6, delay: 0.3 }} // Add a delay of 0.3 seconds for staggered animation
         >
-          <img src={"/svg/night.svg"} alt="" />
+          <img src={"/contact-us-primary.svg"} alt="" />
         </motion.div>
         <motion.div // Wrap the form with motion.div for slide-in animation
           initial={{ opacity: 0, x: 100 }} // Set initial opacity and x position for staggered animation
@@ -102,7 +104,7 @@ const ContactPage = () => {
           </div>
           <form
             onSubmit={handleSubmit(onSubmit, onError)}
-            className="flex container flex-col gap-4 justify-center"
+            className="flex container flex-col gap-4 justify-center caret-primary"
           >
             <motion.div // Wrap each form element with motion.div for staggered animation
               initial={{ opacity: 0, y: 20 }} // Set initial opacity and y position for staggered animation

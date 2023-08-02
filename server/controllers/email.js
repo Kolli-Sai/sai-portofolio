@@ -3,6 +3,7 @@ const Mailgen = require("mailgen");
 
 const sendEmail = async (req, res) => {
   const { email, name, message } = req.body;
+  console.log(`send email ${email} ${name} ${message} called`);
 
   try {
     const transporter = nodemailer.createTransport({

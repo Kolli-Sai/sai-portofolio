@@ -47,14 +47,21 @@ const HomePage = () => {
           className="md:order-2"
           variants={childVariants}
         >
-          <img src={"/svg/programmer.svg"} alt="programmer" />
+          <img src={"/version-control-primary.svg"} alt="programmer" />
         </motion.div>
         <motion.div // Wrap the element with motion.div and use the childVariants
           className="md:order-1 flex flex-col justify-evenly gap-6 mb-10"
           variants={childVariants}
         >
           <TypographyH1>
-            Welcome! I'm <span className="text-primary">Kolli Sai</span>,
+            Welcome! I'm{" "}
+            <span
+              className="
+            bg-clip-text text-transparent bg-gradient-to-tl from-primary  to-secondary"
+            >
+              Kolli Sai
+            </span>
+            ,
           </TypographyH1>
           <TypographyLarge>
             As a full-stack developer, I am consistently learning new web

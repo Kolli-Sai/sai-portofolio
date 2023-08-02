@@ -1,5 +1,5 @@
 import React from "react";
-import { TypographyH2, TypographyH3 } from "../../components/ui/typography";
+import { TypographyH3 } from "../../components/ui/typography";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
@@ -68,13 +68,13 @@ const SkillsPage = () => {
       exit={{ x: "-100%", transition: { ease: "linear" } }}
     >
       <div className="mb-10">
-        <TypographyH2>Skills & Technologies</TypographyH2>
+        <TypographyH3>Skills & Technologies</TypographyH3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {skillsData.map((skill, index) => (
           <motion.div // Wrap each skill card with motion.div and use the childVariants
             key={index}
-            className="bg-white rounded-lg p-4 border border-gray-200 border-2 shadow-md transition-all duration-300 hover:border-indigo-600 hover:shadow-lg hover:border-2  hover:text-indigo-600"
+            className="bg-card rounded-lg p-4 border-foreground border-2 shadow-md transition-all duration-300 hover:border-border hover:shadow-lg hover:border-2  hover:text-border"
             variants={childVariants}
             initial="hidden" // Set initial to "hidden" for the staggered animations of skill cards
             animate="visible" // Set animate to "visible" for the staggered animations of skill cards

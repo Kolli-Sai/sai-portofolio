@@ -1,4 +1,4 @@
-import { TypographyH2 } from "../../components/ui/typography";
+import { TypographyH3 } from "../../components/ui/typography";
 import { Button } from "../../components/ui/button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ const projectsData = [
     source_link:
       "https://github.com/abhi7068/hashinsert-employee-management-app",
     demo_link: "https://employee-management-app-je5w.onrender.com",
-    image: "/svg/team.svg",
+    image: "/team.svg",
   },
   {
     name: "Password Vault",
@@ -19,7 +19,7 @@ const projectsData = [
       "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
     source_link: "https://github.com/Kolli-Sai/password_vault",
     demo_link: "https://wondrous-beignet-6c8752.netlify.app/",
-    image: "/svg/password.svg",
+    image: "/password.svg",
   },
   {
     name: "Url Shortener",
@@ -28,7 +28,7 @@ const projectsData = [
     source_link:
       "https://github.com/hash-insert/url-shortener/tree/Yeswanth-Sai",
     demo_link: "https://url-shortener-rp1j.onrender.com/",
-    image: "/svg/url.svg",
+    image: "/url.svg",
   },
   {
     name: "Hash Market Backend",
@@ -37,7 +37,7 @@ const projectsData = [
     source_link:
       "https://github.com/hash-insert/checkpoint-hash-markt-backend/tree/Yashwanth-Sai",
     demo_link: "",
-    image: "/svg/shopping.svg",
+    image: "/shopping.svg",
   },
 ];
 
@@ -76,7 +76,7 @@ const ProjectsPage = () => {
       exit={{ x: "-100%", transition: { ease: "linear" } }}
     >
       <div className="mb-6">
-        <TypographyH2>Projects</TypographyH2>
+        <TypographyH3>Projects</TypographyH3>
       </div>
       <motion.div // Wrap the project cards in another motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
         {projectsData.map((project, index) => (
           <motion.div // Wrap each project card with motion.div and use the childVariants
             key={index}
-            className="bg-white rounded-lg p-6 border border-gray-200 border-2 shadow-md transition-all duration-300 hover:border-indigo-600 hover:shadow-lg hover:border-2 hover:text-indigo-600"
+            className="bg-card rounded-lg p-6   border-foreground border-2 shadow-md transition-all duration-300 hover:border-border hover:shadow-lg hover:border-2 hover:text-border"
             initial="hidden" // Set initial to "hidden" for the staggered animations of project cards
             animate="visible" // Set animate to "visible" for the staggered animations of project cards
             variants={childVariants} // Apply animations to individual project cards

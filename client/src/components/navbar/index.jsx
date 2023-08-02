@@ -25,8 +25,8 @@ const Navbar = () => {
             className="flex justify-center items-center"
             activeClassName="active-link"
           >
-            <RxPerson className="text-4xl text-black mr-2" />
-            <TypographyH4>Portfolio</TypographyH4>
+            <RxPerson className="text-4xl text-foreground mr-2" />
+            <TypographyH4>Kolli Sai</TypographyH4>
           </NavLink>
         </div>
 
