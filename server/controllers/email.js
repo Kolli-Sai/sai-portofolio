@@ -14,10 +14,10 @@ const sendEmail = async (req, res) => {
     });
 
     const mailGenerator = new Mailgen({
-      theme: "salted", // Use the "salted" theme for a more professional look
+      theme: "default", // Use the "salted" theme for a more professional look
       product: {
         name: "Kolli Sai's Portfolio",
-        link: "https://myapp.com/", // Replace with the actual deployed link of your portfolio
+        link: "https://sai-portofolio.vercel.app/", // Replace with the actual deployed link of your portfolio
       },
     });
 
@@ -31,7 +31,7 @@ const sendEmail = async (req, res) => {
           button: {
             color: "#22BC66",
             text: "View Portfolio",
-            link: "https://example-portfolio.com/johndoe", // Replace with the actual deployed link of your portfolio
+            link: "https://sai-portofolio.vercel.app/", // Replace with the actual deployed link of your portfolio
           },
         },
         outro:
