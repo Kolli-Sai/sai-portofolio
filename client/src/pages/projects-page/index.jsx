@@ -90,9 +90,7 @@ const ProjectsPage = () => {
             variants={childVariants} // Apply animations to individual project cards
             transition={{ delay: index * 0.2 }} // Apply a delay for each card based on its index in the projectsData array
           >
-            <div className="text-xl font-bold hover:text-indigo-600 mb-6">
-              {project.name}
-            </div>
+            <div className="text-xl font-bold  mb-6">{project.name}</div>
             {/* <TypographyH3 className="mb-4">{project.name}</TypographyH3> */}
             <img
               src={project.image}

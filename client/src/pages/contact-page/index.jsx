@@ -5,6 +5,7 @@ import {
   TypographyH1,
   TypographyH2,
   TypographyMuted,
+  TypographyP,
 } from "../../components/ui/typography";
 import { Button } from "../../components/ui/button";
 import { Textarea } from "../../components/ui/textarea";
@@ -18,6 +19,12 @@ import { motion } from "framer-motion";
 
 import { Api } from "../../API";
 import { CgSpinner } from "react-icons/cg";
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
+import { SiInstagram } from "react-icons/si";
+import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { Separator } from "../../components/ui/separator";
 
 const schema = yup.object().shape({
   name: yup.string().required(),
@@ -162,6 +169,51 @@ const ContactPage = () => {
         </motion.div>
       </div>
       <Toaster className="bg-green-500" />
+      {/* <Separator className="mt-8 text-secondary" /> */}
+      <div className=" flex justify-center my-8">
+        <TypographyP>Contact</TypographyP>
+      </div>
+      <div className="flex justify-center space-x-4 flex-wrap mt-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Set initial opacity and y position for staggered animation
+          animate={{ opacity: 1, y: 0 }} // Set animate opacity and y position for staggered animation
+          transition={{ duration: 0.4, delay: 0.5 }} // Add a delay for the staggered animation
+        >
+          <Link to={"https://www.facebook.com/k.sai.140193?mibextid=ZbWKwL"}>
+            <FaFacebookSquare className="text-xl text-inherit  hover:text-accent  mr-2" />
+          </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Set initial opacity and y position for staggered animation
+          animate={{ opacity: 1, y: 0 }} // Set animate opacity and y position for staggered animation
+          transition={{ duration: 0.4, delay: 0.6 }} // Add a delay for the staggered animation
+        >
+          <Link to={"https://www.linkedin.com/in/kolli-sai-676772233"}>
+            <AiFillLinkedin className="text-xl text-inherit  hover:text-accent  mr-2" />
+          </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Set initial opacity and y position for staggered animation
+          animate={{ opacity: 1, y: 0 }} // Set animate opacity and y position for staggered animation
+          transition={{ duration: 0.4, delay: 0.7 }} // Add a delay for the staggered animation
+        >
+          <Link to={"https://github.com/Kolli-Sai"}>
+            <BsGithub className="text-xl text-inherit  hover:text-accent  mr-2" />
+          </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }} // Set initial opacity and y position for staggered animation
+          animate={{ opacity: 1, y: 0 }} // Set animate opacity and y position for staggered animation
+          transition={{ duration: 0.4, delay: 0.8 }} // Add a delay for the staggered animation
+        >
+          <Link to={"https://www.instagram.com/sai___kolli/?next=%2F"}>
+            <SiInstagram className="text-xl text-inherit hover:text-accent   mr-2" />
+          </Link>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };

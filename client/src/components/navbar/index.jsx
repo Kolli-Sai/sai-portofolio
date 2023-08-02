@@ -35,7 +35,7 @@ const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Button variant="ghost" size="icon">
-                  <HiMenuAlt3 className="text-4xl text-black" />
+                  <HiMenuAlt3 className="text-4xl text-foreground" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
