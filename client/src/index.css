@@ -79,4 +79,7 @@
   html {
     font-family: "Poppins", sans-serif;
   }
+  ::selection {
+    @apply bg-rose-600 text-foreground;
+  }
 }
