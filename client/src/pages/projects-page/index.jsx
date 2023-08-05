@@ -84,7 +84,7 @@ const ProjectsPage = () => {
         {projectsData.map((project, index) => (
           <motion.div // Wrap each project card with motion.div and use the childVariants
             key={index}
-            className="bg-card rounded-lg p-6   border-foreground border-2 shadow-md transition-all duration-300 hover:border-border hover:shadow-lg hover:border-2 hover:text-border"
+            className="bg-card rounded-lg p-6   border-border border-2 shadow-md transition-all duration-300 hover:border-foreground hover:shadow-lg hover:border-2 "
             initial="hidden" // Set initial to "hidden" for the staggered animations of project cards
             animate="visible" // Set animate to "visible" for the staggered animations of project cards
             variants={childVariants} // Apply animations to individual project cards

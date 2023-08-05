@@ -74,7 +74,7 @@ const SkillsPage = () => {
         {skillsData.map((skill, index) => (
           <motion.div // Wrap each skill card with motion.div and use the childVariants
             key={index}
-            className="bg-card rounded-lg p-4 border-foreground border-2 shadow-md transition-all duration-300 hover:border-border hover:shadow-lg hover:border-2  hover:text-border"
+            className="bg-card rounded-lg p-4 border-border border-2 shadow-md transition-all duration-300 hover:border-foreground hover:shadow-lg hover:border-2  "
             variants={childVariants}
             initial="hidden" // Set initial to "hidden" for the staggered animations of skill cards
             animate="visible" // Set animate to "visible" for the staggered animations of skill cards
