@@ -17,7 +17,7 @@ const sendEmail = async (req, res) => {
     const mailGenerator = new Mailgen({
       theme: "default", // Use the "salted" theme for a more professional look
       product: {
-        name: "Kolli Sai's Portfolio",
+        name: "Kolli Sai",
         link: "https://sai-portofolio.vercel.app/", // Replace with the actual deployed link of your portfolio
       },
     });

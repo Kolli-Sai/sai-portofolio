@@ -8,17 +8,16 @@ const projectsData = [
     name: "Employee Management App",
     description:
       "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
-    source_link:
-      "https://github.com/abhi7068/hashinsert-employee-management-app",
-    demo_link: "https://employee-management-app-je5w.onrender.com",
+    source_link: "https://github.com/hash-insert/Employee-Management-App-ALPHA",
+    demo_link: "https://fluffy-halva-49f833.netlify.app/",
     image: "/team.svg",
   },
   {
     name: "Password Vault",
     description:
       "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
-    source_link: "https://github.com/Kolli-Sai/password_vault",
-    demo_link: "https://wondrous-beignet-6c8752.netlify.app/",
+    source_link: "https://github.com/Kolli-Sai/passwords",
+    demo_link: "https://passwords-fyt5f2efk-kolli-sai.vercel.app/",
     image: "/password.svg",
   },
   {
@@ -30,15 +29,15 @@ const projectsData = [
     demo_link: "https://url-shortener-rp1j.onrender.com/",
     image: "/url.svg",
   },
-  {
-    name: "Hash Market Backend",
-    description:
-      "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
-    source_link:
-      "https://github.com/hash-insert/checkpoint-hash-markt-backend/tree/Yashwanth-Sai",
-    demo_link: "",
-    image: "/shopping.svg",
-  },
+  // {
+  //   name: "Hash Market Backend",
+  //   description:
+  //     "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
+  //   source_link:
+  //     "https://github.com/hash-insert/checkpoint-hash-markt-backend/tree/Yashwanth-Sai",
+  //   demo_link: "",
+  //   image: "/shopping.svg",
+  // },
 ];
 
 const ProjectsPage = () => {
