@@ -17,7 +17,7 @@ const projectsData = [
     description:
       "A full-stack web application that allows users to manage employees. Users can add, edit, and delete employees. The app also allows users to filter employees by name, email, and phone number.",
     source_link: "https://github.com/Kolli-Sai/passwords",
-    demo_link: "https://passwords-fyt5f2efk-kolli-sai.vercel.app/",
+    demo_link: "https://passwords-jekz3evge-kolli-sai.vercel.app/",
     image: "/password.svg",
   },
   {
